@@ -7,39 +7,11 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: "511"
-created: "2018-08-24"
-modified: "2018-08-24"
+created: "2018-08-25"
+modified: "2018-08-25"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/511/master/_listings/511-bay-area/apis.md
 specificationVersion: "0.14"
-apis:
-- name: 511 Driving Times
-  x-api-slug: 511-driving-times
-  description: The 511 Driving Times API provides 511s current and typical driving
-    times between a starting and ending point, including incidents along the route.
-    The API consists of a collection of individual services implemented using simple
-    web pages that accept query string parameters and return plain XML documents.
-    If youd like a complete traffic data set (incidents, speed, and travel time data)
-    by individual links, please check out the 511 Traffic Data Feed.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/logo_511_128x128_400x400.jpg
-  humanURL: http://www.511.org/
-  baseURL: https:///
-  tags: "511"
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/511/master/_listings/511-bay-area/openapi.md
-- name: '511 Real-time Transit Departures '
-  x-api-slug: 511-realtime-transit-departures-
-  description: The 511 Real-time Transit Departures API provides real-time departure
-    predictions for several regional transit agencies, including BART, Muni, and AC
-    Transit. The API consists of a collection of individual services implemented using
-    simple web pages that accept query string parameters and return plain XML documents.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/logo_511_128x128_400x400.jpg
-  humanURL: http://www.511.org/
-  baseURL: https:///
-  tags: "511"
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/511/master/_listings/511-bay-area/openapi.md
+apis: []
 x-common:
 - type: x-twitter
   url: https://twitter.com/511SFBay
