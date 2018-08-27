@@ -1,0 +1,109 @@
+---
+swagger: "2.0"
+x-collection-name: 511 Bay Area
+x-complete: 0
+info:
+  title: Bay Area 511 Transit API Stop Monitoring API
+  description: San francisco 511 transit stop monitoring api.
+  version: 1.0.0
+host: api.511.org
+basePath: /transit
+schemes:
+- http
+produces:
+- application/json
+consumes:
+- application/json
+paths:
+  /lines:
+    get:
+      summary: Lines API
+      description: San francisco 511 transit lines api.
+      operationId: LinesGet
+      x-api-path-slug: lines-get
+      parameters:
+      - in: query
+        name: api_key
+      - in: query
+        name: operator_id
+      responses:
+        200:
+          description: OK
+      tags:
+      - "511"
+      - Lines
+      - API
+  /patterns:
+    get:
+      summary: Transit Patterns API
+      description: San francisco 511 transit transit patterns api.
+      operationId: PatternsGet
+      x-api-path-slug: patterns-get
+      parameters:
+      - in: query
+        name: api_key
+      - in: query
+        name: operator_id
+      - in: query
+        name: pattern_id
+      responses:
+        200:
+          description: OK
+      tags:
+      - "511"
+      - Transit
+      - Patterns
+      - API
+  /stops:
+    get:
+      summary: Stops API
+      description: San francisco 511 transit stops api.
+      operationId: StopsGet
+      x-api-path-slug: stops-get
+      parameters:
+      - in: query
+        name: api_key
+      - in: query
+        name: operator_id
+      responses:
+        200:
+          description: OK
+      tags:
+      - "511"
+      - Stops
+      - API
+  /StopMonitoring:
+    get:
+      summary: Stop Monitoring API
+      description: San francisco 511 transit stop monitoring api.
+      operationId: StopMonitoringGet
+      x-api-path-slug: stopmonitoring-get
+      parameters:
+      - in: query
+        name: agency
+      - in: query
+        name: api_key
+      - in: query
+        name: stopCode
+      responses:
+        200:
+          description: OK
+      tags:
+      - "511"
+      - Stop
+      - Monitoring
+      - API
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---

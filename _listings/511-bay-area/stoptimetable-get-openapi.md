@@ -1,10 +1,10 @@
 ---
 swagger: "2.0"
 x-collection-name: 511 Bay Area
-x-complete: 1
+x-complete: 0
 info:
-  title: San Francisco 511
-  description: open511-aims-to-create-simple-uniform-and-resource-driven-apis-that-can-be-easily-used-by-consumers-to-retrieve-data-from-511-org--using-the-new-api-is-designed-to-be-as-simple-as-possible-and-is-available-to-all--users-of-the-api-are-required-to-obtain-access-tokens-and-must-send-those-tokens-as-part-of-their-request-
+  title: Bay Area 511 Transit API Stop Timetable API
+  description: San francisco 511 transit stop timetable api.
   version: 1.0.0
 host: api.511.org
 basePath: /transit
@@ -114,83 +114,17 @@ paths:
       - Stop
       - Timetable
       - API
-  /GeneralAnnouncements:
-    get:
-      summary: San Francisco 511 General Announcements API
-      description: San francisco 511 general announcements api.
-      operationId: GeneralAnnouncementsGet
-      x-api-path-slug: generalannouncements-get
-      parameters:
-      - in: query
-        name: api_key
-      responses:
-        200:
-          description: OK
-      tags:
-      - "511"
-      - San
-      - Francisco
-      - "511"
-      - General
-      - Announcements
-      - API
-  /stopPlaces:
-    get:
-      summary: Stop Places API
-      description: San francisco 511 transit stop places api.
-      operationId: StopPlacesGet
-      x-api-path-slug: stopplaces-get
-      parameters:
-      - in: query
-        name: api_key
-      - in: query
-        name: operator_id
-      responses:
-        200:
-          description: OK
-      tags:
-      - "511"
-      - Stop
-      - Places
-      - API
-  /VehicleMonitoring:
-    get:
-      summary: San Francisco 511 Vehicle Monitoring API
-      description: San francisco 511 vehicle monitoring api.
-      operationId: VehicleMonitoringGet
-      x-api-path-slug: vehiclemonitoring-get
-      parameters:
-      - in: query
-        name: agency
-      - in: query
-        name: api_key
-      - in: query
-        name: stopCode
-      responses:
-        200:
-          description: OK
-      tags:
-      - "511"
-      - San
-      - Francisco
-      - "511"
-      - Vehicle
-      - Monitoring
-      - API
-  /operators:
-    get:
-      summary: Operatorators API
-      description: San francisco 511 transit operatorators api.
-      operationId: OperatorsGet
-      x-api-path-slug: operators-get
-      parameters:
-      - in: query
-        name: api_key
-      responses:
-        200:
-          description: OK
-      tags:
-      - "511"
-      - Operatorators
-      - API
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
 ---
