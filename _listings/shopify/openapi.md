@@ -16,21 +16,6 @@ consumes:
 - application/json
 paths:
   /admin/discounts/2951196163.json:
-    get:
-      summary: Retrieve a discount
-      description: Retrieve a discount.
-      operationId: getAdminDiscounts2951196163.json
-      x-api-path-slug: admindiscounts2951196163-json-get
-      parameters:
-      - in: header
-        name: Content-Type
-      responses:
-        200:
-          description: OK
-      tags:
-      - Commerce
-      - Retrieve
-      - Discount
     delete:
       summary: Delete a discount
       description: Delete a discount.
@@ -68,25 +53,5 @@ paths:
       tags:
       - Commerce
       - Disable
-      - Discount
-  /admin/discounts/2951196163/enable.json:
-    post:
-      summary: Enable a discount
-      description: Enable a discount.
-      operationId: postAdminDiscounts2951196163Enable.json
-      x-api-path-slug: admindiscounts2951196163enable-json-post
-      parameters:
-      - in: body
-        name: Body
-        schema:
-          $ref: '#/definitions/holder'
-      - in: header
-        name: Content-Type
-      responses:
-        200:
-          description: OK
-      tags:
-      - Commerce
-      - Enable
       - Discount
 ---

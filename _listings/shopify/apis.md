@@ -13,19 +13,7 @@ created: "2018-08-26"
 modified: "2018-08-26"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/511/master/_listings/shopify/apis.md
 specificationVersion: "0.14"
-apis:
-- name: Shopify API - Retrieve a discount
-  x-api-slug: admindiscounts2951196163-json-get
-  description: Retrieve a discount.
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Shopify-logo.png
-  humanURL: https://www.shopify.com/
-  baseURL: https://DefaultParameterValue:DefaultParameterValue@DefaultParameterValue.myshopify.com//
-  tags: Commerce, Commerce, Target, Stack Network, Relative Data, Service API
-  properties:
-  - type: x-postman-collection
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/511/master/_listings/shopify/admindiscounts2951196163-json-get-postman.md
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-topics/511/master/_listings/shopify/admindiscounts2951196163-json-get-openapi.md
+apis: []
 x-common:
 - type: x-api-gallery
   url: http://ship.station.api.gallery.streamdata.io
